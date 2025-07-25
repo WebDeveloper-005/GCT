@@ -1,0 +1,20 @@
+import { Link } from "react-router"
+
+const Navbar = () => {
+    return(
+        <nav className="flex gap-4">
+            <div>
+                logo
+            </div>
+            <ul className="flex gap-4">
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
+                <li><Link to="/register">Register</Link></li>
+                <li><Link to="/login">Login</Link></li>
+            </ul>
+        </nav>
+    )
+}
+
+export default Navbar
